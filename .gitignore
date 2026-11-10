@@ -1,0 +1,18 @@
+*.iml
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+/app/build
+/.kotlin
+
+# Files this session could not delete directly; safe to remove.
+/_to_delete
+
+# Built APKs: share them as files, not in the repository.
+*.apk

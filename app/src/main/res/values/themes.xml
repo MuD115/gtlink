@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+      forceDarkAllowed defaults to true at targetSdk 29+, which lets the OS run its
+      own colour-inversion heuristic over the whole app whenever the system is in
+      dark mode - regardless of the scheme Compose actually resolved. GT Link
+      renders its own light/dark scheme; the OS must never repaint on top of it.
+      The black window background is what shows during cold start, before the first
+      Compose frame, so it avoids a white flash in dark mode.
+    -->
+    <style name="Theme.GTLink" parent="android:Theme.Material.NoActionBar">
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+</resources>

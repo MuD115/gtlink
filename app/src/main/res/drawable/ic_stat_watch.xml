@@ -1,0 +1,26 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Foreground-service notification icon. Status-bar icons must be white on
+         transparent; the system tints them, so only the alpha shape matters. -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M8.5,2 H15.5 L16.2,5.6 H7.8 Z" />
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M7.8,18.4 H16.2 L15.5,22 H8.5 Z" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M12,5.75 A6.25,6.25 0 1 1 12,18.25 A6.25,6.25 0 1 1 12,5.75 Z"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="2" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M12,9 V12 L14,13.5"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

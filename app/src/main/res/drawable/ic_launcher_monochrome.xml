@@ -1,0 +1,25 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Themed-icon layer. The system supplies the colour, so this is a plain
+         silhouette of the same mark. -->
+    <path
+        android:fillColor="#FF000000"
+        android:fillType="evenOdd"
+        android:pathData="M54,33 A21,21 0 1 1 54,75 A21,21 0 1 1 54,33 Z M54,37.5 A16.5,16.5 0 1 1 54,70.5 A16.5,16.5 0 1 1 54,37.5 Z" />
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M49,22 H59 A3,3 0 0 1 62,25 V34 H46 V25 A3,3 0 0 1 49,22 Z" />
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M46,74 H62 V83 A3,3 0 0 1 59,86 H49 A3,3 0 0 1 46,83 Z" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M42,55 L47,55 L50.5,46.5 L56,63 L59,55 L66,55"
+        android:strokeColor="#FF000000"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>

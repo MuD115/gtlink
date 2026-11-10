@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Pre-Android-12 auto-backup rules. The app keeps each watch's pairing keys in shared
+  preferences; those keys are bound to this phone's pairing with the watch, so a
+  restore onto another phone would hand it keys the watch will reject. Exclude them
+  and let the user re-pair instead.
+-->
+<full-backup-content>
+    <exclude domain="sharedpref" path="." />
+</full-backup-content>
