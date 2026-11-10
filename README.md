@@ -62,13 +62,24 @@ reset always works.
 
 ## Build
 
-```powershell
-$env:JAVA_HOME = 'C:\Users\Muhammed\.jdks\temurin-17.0.18'
+No Android Studio needed. You need:
+
+- **JDK 17**, with `JAVA_HOME` pointing at it.
+- **Android SDK command-line tools** (developer.android.com/studio, "Command line tools only"),
+  unzipped so the path ends in `<sdk>/cmdline-tools/latest/bin`, and `ANDROID_HOME` set to `<sdk>`.
+  Alternatively, put `sdk.dir=<sdk>` in a `local.properties` file (ignored by git).
+
+One-time setup, then build:
+
+```
+sdkmanager --licenses
+sdkmanager "platform-tools"
 .\gradlew.bat :app:testDebugUnitTest :app:assembleDebug
 adb install -r app\build\outputs\apk\debug\app-debug.apk
 ```
 
-Needs JDK 17 and the Android SDK (set in the ignored `local.properties`).
+On macOS/Linux use `./gradlew`. The first build downloads Gradle 9.3.1, Android platform 37,
+the build tools and all libraries (about 1–2 GB). Coding agents: see `AGENTS.md`.
 
 ## How it is built
 
@@ -97,5 +108,5 @@ message is AES-encrypted with the session key from the HiChain bind.
 | Protocol: framing, TLV, crypto constants, HiChain / auth flow, packet layouts, frame test vectors | [Gadgetbridge](https://codeberg.org/Freeyourgadget/Gadgetbridge) (`devices/huawei`, `service/devices/huawei`), **AGPL-3.0** |
 
 Because the protocol layer is a port of Gadgetbridge code, this app is a derivative work of
-AGPL-3.0 software. That's fine for personal use. If you ever distribute it, distribute it
-under AGPL-3.0 with its source.
+AGPL-3.0 software and is licensed under AGPL-3.0 (see `LICENSE`). Anyone you share it with
+receives it under the same terms, and must keep sharing the source if they pass it on.
